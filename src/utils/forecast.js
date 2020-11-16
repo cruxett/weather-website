@@ -21,7 +21,7 @@ const forecast = (longitude, latitude, callback) => {
       } = body.current;
       callback(
         undefined,
-        `${weather_descriptions[0]} with wind speeds of ${wind_speed} and humidity of ${humidity}.\n It is currently ${temperature} degrees out. It feels like ${feelslike} degrees out.\n Observation time is ${observation_time}.`
+        `${weather_descriptions[0]} with wind speeds of ${wind_speed} and humidity of ${humidity}%.\n It is currently ${temperature} degrees out. It feels like ${feelslike} degrees out.\n Observation time is ${observation_time}.`
       );
     }
   });
